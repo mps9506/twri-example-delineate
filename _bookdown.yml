@@ -1,0 +1,4 @@
+new_session: yes
+output_dir: "docs" # for gh-pages
+rmd_files: ["document.Rmd"]
+book_filename: "index.Rmd"

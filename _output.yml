@@ -1,0 +1,17 @@
+bookdown::gitbook:
+  number_sections: FALSE
+  split_by: none
+  css: style.css
+  includes:
+    after_body: footer.html
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">TEMPLATE</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: ["rmd"]
+    edit:
+      link: https://github.com/mps9506/twri-bookdown-template/edit/main/%s
+      text: "Suggest an edit"

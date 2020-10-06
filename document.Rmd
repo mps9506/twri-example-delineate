@@ -1,0 +1,40 @@
+---
+title: "Template"
+author: "Michael Schramm"
+date: "`r Sys.Date()`"
+github-repo: mps9506/twri-bookdown-template
+bibliography: bibliography.bib
+biblio-style: "apalike"
+link-citations: true
+---
+
+
+```{r include=FALSE}
+ragg_png = function(..., res = 192) {
+  ragg::agg_png(..., res = res, units = "in")
+}
+knitr::opts_chunk$set(dev = "ragg_png",
+                      fig.ext = "png",
+                      fig.retina=2)
+```
+
+
+```{r isetup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(hrbrthemes)
+
+set.seed(101)
+
+update_geom_font_defaults(font_rc)
+```
+
+
+# Chapter 1 {-}
+
+blah blah [@rcore].
+
+## Subheading
+
+
+# Chapter 2 {-}
+
+# References {-}
