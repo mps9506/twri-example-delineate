@@ -2,7 +2,7 @@
 title: "Template"
 author: "Michael Schramm"
 date: "`r Sys.Date()`"
-github-repo: mps9506/twri-bookdown-template
+github-repo: https://github.com/mps9506/twri-example-delineate
 bibliography: bibliography.bib
 biblio-style: "apalike"
 link-citations: true
