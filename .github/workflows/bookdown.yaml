@@ -48,9 +48,9 @@ jobs:
       - name: Install packages
         run: |
           R -e 'install.packages(c("remotes","knitr","ragg","renv","bookdown", "hrbrthemes", "raster", "stars", "sf", "tidyverse"))'
-          R -e `remotes::install_github("giswqs/whiteboxR", upgrade = "never", quiet = TRUE)`
-          R -e `remotes::install_github("jimhester/archive", upgrade = "never", quiet = TRUE)`
-          R -e `whitebox::wbt_init()`
+          R -e 'remotes::install_github("giswqs/whiteboxR", upgrade = "never", quiet = TRUE)'
+          R -e 'remotes::install_github("jimhester/archive", upgrade = "never", quiet = TRUE)'
+          R -e 'whitebox::wbt_init()'
           R -e 'renv::restore()'
 
       - name: Build site
