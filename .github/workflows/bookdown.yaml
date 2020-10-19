@@ -6,7 +6,7 @@ name: render-bookdown
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -19,15 +19,17 @@ jobs:
           crayon.enabled: 'FALSE'
 
       - name: Install pandoc and pandoc citeproc
-        run: |
-          brew install pandoc
-          brew install pandoc-citeproc
+        uses: r-lib/actions/setup-pandoc@v1
 
       - name: Install system dependencies
         run: |
-          brew install pkg-config
-          brew install gdal
-          brew install proj
+          sudo apt update
+          sudo apt install \
+            libcurl4-openssl-dev \
+            libudunits2-dev \
+            libgdal-dev \
+            libgeos-dev \
+            libproj-dev \
 
       - name: Cache Renv packages
         uses: actions/cache@v2
