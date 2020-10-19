@@ -10,12 +10,7 @@ link-citations: true
 
 
 ```{r include=FALSE}
-ragg_png = function(..., res = 192) {
-  ragg::agg_png(..., res = res, units = "in")
-}
-knitr::opts_chunk$set(dev = "ragg_png",
-                      fig.ext = "png",
-                      fig.retina=2)
+knitr::opts_chunk$set(fig.retina=2)
 ```
 
 
