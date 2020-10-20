@@ -164,7 +164,7 @@ Finally, we need to identify the location(s) to delineate the watershed(s) from.
 ```{r tceqpolyline}
 ## can use the download_wbd_function to download and load polyline data
 au <- download_wbd(url = "https://opendata.arcgis.com/datasets/175c3cb32f2840eca2bf877b93173ff9_4.zip?outSR=%7B%22falseM%22%3A-100000%2C%22xyTolerance%22%3A8.98315284119521e-9%2C%22mUnits%22%3A10000%2C%22zUnits%22%3A1%2C%22latestWkid%22%3A4269%2C%22zTolerance%22%3A2%2C%22wkid%22%3A4269%2C%22xyUnits%22%3A11258999068426.24%2C%22mTolerance%22%3A0.001%2C%22falseX%22%3A-400%2C%22falseY%22%3A-400%2C%22falseZ%22%3A0%7D",
-                   rel_path = "/surface_water.shp")
+                   rel_path = "/Surface_Water.shp")
 
 ## subset AU to lines of interest
 au <- au[au$AU_ID %in% c("1242D_01", "1242D_02", "1242B_01", "1242C_01"),]
