@@ -311,7 +311,7 @@ wbt_breach_depressions_least_cost(dem = file_elevation,
 ```
 
 ```
-## [1] "breach_depressions_least_cost - Elapsed Time (excluding I/O): 0.33s"
+## [1] "breach_depressions_least_cost - Elapsed Time (excluding I/O): 0.31s"
 ```
 
 **Flow Direction**
@@ -324,7 +324,7 @@ wbt_rho8_pointer(dem = file_breached,
 ```
 
 ```
-## [1] "rho8_pointer - Elapsed Time (excluding I/O): 0.22s"
+## [1] "rho8_pointer - Elapsed Time (excluding I/O): 0.23s"
 ```
 
 **Flow Accumulation**
@@ -338,7 +338,7 @@ wbt_d8_flow_accumulation(input = file_pointer,
 ```
 
 ```
-## [1] "d8_flow_accumulation - Elapsed Time (excluding I/O): 0.23s"
+## [1] "d8_flow_accumulation - Elapsed Time (excluding I/O): 0.25s"
 ```
 
 ```r
@@ -359,7 +359,7 @@ wbt_extract_streams(flow_accum = file_accumulation,
 ```
 
 ```
-## [1] "extract_streams - Elapsed Time (excluding I/O): 0.3s"
+## [1] "extract_streams - Elapsed Time (excluding I/O): 0.7s"
 ```
 
 ```r

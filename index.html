@@ -368,18 +368,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb22-5"><a href="#cb22-5"></a>                                  <span class="dt">output =</span> file_breached,</span>
 <span id="cb22-6"><a href="#cb22-6"></a>                                  <span class="dt">dist =</span> <span class="dv">0</span>,</span>
 <span id="cb22-7"><a href="#cb22-7"></a>                                  <span class="dt">fill =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;breach_depressions_least_cost - Elapsed Time (excluding I/O): 0.33s&quot;</code></pre>
+<pre><code>## [1] &quot;breach_depressions_least_cost - Elapsed Time (excluding I/O): 0.31s&quot;</code></pre>
 <p><strong>Flow Direction</strong></p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>file_pointer &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;pointer.tif&quot;</span>)</span>
 <span id="cb24-2"><a href="#cb24-2"></a><span class="kw">wbt_rho8_pointer</span>(<span class="dt">dem =</span> file_breached,</span>
 <span id="cb24-3"><a href="#cb24-3"></a>               <span class="dt">output =</span> file_pointer)</span></code></pre></div>
-<pre><code>## [1] &quot;rho8_pointer - Elapsed Time (excluding I/O): 0.22s&quot;</code></pre>
+<pre><code>## [1] &quot;rho8_pointer - Elapsed Time (excluding I/O): 0.23s&quot;</code></pre>
 <p><strong>Flow Accumulation</strong></p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>file_accumulation &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;fac.tif&quot;</span>)</span>
 <span id="cb26-2"><a href="#cb26-2"></a><span class="kw">wbt_d8_flow_accumulation</span>(<span class="dt">input =</span> file_pointer,</span>
 <span id="cb26-3"><a href="#cb26-3"></a>                         <span class="dt">output =</span> file_accumulation,</span>
 <span id="cb26-4"><a href="#cb26-4"></a>                         <span class="dt">pntr =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;d8_flow_accumulation - Elapsed Time (excluding I/O): 0.23s&quot;</code></pre>
+<pre><code>## [1] &quot;d8_flow_accumulation - Elapsed Time (excluding I/O): 0.25s&quot;</code></pre>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">plot</span>(<span class="kw">raster</span>(file_accumulation))</span></code></pre></div>
 <p><img src="document_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p><strong>Extract Streams</strong></p>
@@ -388,7 +388,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb29-3"><a href="#cb29-3"></a>                    <span class="dt">output =</span> file_streams,</span>
 <span id="cb29-4"><a href="#cb29-4"></a>                    <span class="dt">threshold =</span> <span class="dv">2000</span>,</span>
 <span id="cb29-5"><a href="#cb29-5"></a>                    <span class="dt">zero_background =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
-<pre><code>## [1] &quot;extract_streams - Elapsed Time (excluding I/O): 0.3s&quot;</code></pre>
+<pre><code>## [1] &quot;extract_streams - Elapsed Time (excluding I/O): 0.7s&quot;</code></pre>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">plot</span>(<span class="kw">raster</span>(file_streams))</span></code></pre></div>
 <p><img src="document_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p><strong>Snap Pour Points</strong></p>
