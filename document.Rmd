@@ -29,7 +29,6 @@ update_geom_font_defaults(font_rc)
 
 This tutorial will demonstrate watershed delineation in with R [@rcore]. The tutorial relies heavily on the `whitebox` package, which is a frontend R interface to the stand alone WhiteboxTools geospatial analysis platform [@whitebox; @lindsay2016whitebox]. Unfortunately, `whitebox` is not on CRAN. Depending on your system setup, your difficulty getting it installed will vary. I need to write another tutorial on installing R packages from sources other than CRAN. In short, if you haven't done this before, Windows users will need to [download and install RTools](https://cran.rstudio.com/bin/windows/Rtools/) to build and compile R packages; Mac users need [Xcode](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites).
 
-**add linkage to something describing installing packages in windows**
 
 ```{r eval=FALSE}
 ## this installs the package that
@@ -97,9 +96,9 @@ download_nhd <- function(url,
   return(ras)
 }
 
-## note that the escaped backslashes should be forward slashes on unix based systems
+## note that the rel_path forward slashes should be escaped backslashes on windows systems
 elevation <- download_nhd(url = "http://www.horizon-systems.com/NHDPlusData/NHDPlusV21/Data/NHDPlusTX/NHDPlusV21_TX_12_12b_Hydrodem_01.7z",
-                          rel_path = "\\NHDPlusTX\\NHDPlus12\\NHDPlusHydrodem12b\\hydrodem")
+                          rel_path = "/NHDPlusTX/NHDPlus12/NHDPlusHydrodem12b/hydrodem")
 ```
 
 
@@ -138,7 +137,7 @@ download_wbd <- function(url,
 }
 
 wbd <- download_wbd(url = "http://www.horizon-systems.com/NHDPlusData/NHDPlusV21/Data/NHDPlusTX/NHDPlusV21_TX_12_WBDSnapshot_03.7z",
-                    rel_path = "\\NHDPlusTX\\NHDPlus12\\WBDSnapshot\\WBD\\WBD_Subwatershed")
+                    rel_path = "/NHDPlusTX/NHDPlus12/WBDSnapshot/WBD/WBD_Subwatershed")
 ```
 
 Now we have a large raster and a large shapefile. I want to clip this to a particular area of interest by first by filtering `wbd` to a HUC_12 of interest, then cropping `elevation` to the spatial extent of `wbd`.
@@ -165,7 +164,7 @@ Finally, we need to identify the location(s) to delineate the watershed(s) from.
 ```{r tceqpolyline}
 ## can use the download_wbd_function to download and load polyline data
 au <- download_wbd(url = "https://opendata.arcgis.com/datasets/175c3cb32f2840eca2bf877b93173ff9_4.zip?outSR=%7B%22falseM%22%3A-100000%2C%22xyTolerance%22%3A8.98315284119521e-9%2C%22mUnits%22%3A10000%2C%22zUnits%22%3A1%2C%22latestWkid%22%3A4269%2C%22zTolerance%22%3A2%2C%22wkid%22%3A4269%2C%22xyUnits%22%3A11258999068426.24%2C%22mTolerance%22%3A0.001%2C%22falseX%22%3A-400%2C%22falseY%22%3A-400%2C%22falseZ%22%3A0%7D",
-                   rel_path = "\\surface_water.shp")
+                   rel_path = "/surface_water.shp")
 
 ## subset AU to lines of interest
 au <- au[au$AU_ID %in% c("1242D_01", "1242D_02", "1242B_01", "1242C_01"),]
