@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Template</title>
+  <meta name="description" content="Template" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Template" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="https://github.com/mps9506/twri-example-delineate" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Template" />
+  
+  
+  
+
+<meta name="author" content="Michael Schramm" />
+
+
+<meta name="date" content="2020-10-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">TEMPLATE</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path=""><a href="#prereqs"><i class="fa fa-check"></i>Prereqs</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#whitebox"><i class="fa fa-check"></i>Whitebox</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#other-packages"><i class="fa fa-check"></i>Other Packages</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#data"><i class="fa fa-check"></i>Data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#delineate"><i class="fa fa-check"></i>Delineate</a><ul>
+<li class="chapter" data-level="" data-path=""><a href="#write-data"><i class="fa fa-check"></i>Write Data</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#whitebox-functions"><i class="fa fa-check"></i>whitebox Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path=""><a href="#references"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Template</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Template</h1>
+<p class="author"><em>Michael Schramm</em></p>
+<p class="date"><em>2020-10-20</em></p>
+</div>
+<div id="prereqs" class="section level1 unnumbered">
+<h1>Prereqs</h1>
+<div id="whitebox" class="section level2">
+<h2>Whitebox</h2>
+<p>This tutorial will demonstrate watershed delineation in with R <span class="citation">(R Core Team <a href="#ref-rcore" role="doc-biblioref">2020</a>)</span>. The tutorial relies heavily on the <code>whitebox</code> package, which is a frontend R interface to the stand alone WhiteboxTools geospatial analysis platform <span class="citation">(Wu <a href="#ref-whitebox" role="doc-biblioref">2020</a>; Lindsay <a href="#ref-lindsay2016whitebox" role="doc-biblioref">2016</a>)</span>. Unfortunately, <code>whitebox</code> is not on CRAN. Depending on your system setup, your difficulty getting it installed will vary. I need to write another tutorial on installing R packages from sources other than CRAN. In short, if you haven’t done this before, Windows users will need to <a href="https://cran.rstudio.com/bin/windows/Rtools/">download and install RTools</a> to build and compile R packages; Mac users need <a href="https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites">Xcode</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">## this installs the package that</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">## will download and install packages on GitHub</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">install.packages</span>(<span class="st">&quot;remotes&quot;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">## use the remotes package to install whitebox</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;giswqs/whiteboxR&quot;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">## use whitebox to install the WhiteboxTools binaries</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>whitebox<span class="op">::</span><span class="kw">wbt_init</span>()</span></code></pre></div>
+</div>
+<div id="other-packages" class="section level2 unnumbered">
+<h2>Other Packages</h2>
+<p>Make sure the following libraries are installed. The <code>archive</code> package is only needed if you are downloading and extracting data with your R script like in this example. If you are using raster and shapefile data you have stored locally, it is not required.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(whitebox)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(raster)</span></code></pre></div>
+<pre><code>## Loading required package: sp</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(stars)</span></code></pre></div>
+<pre><code>## Loading required package: abind</code></pre>
+<pre><code>## Loading required package: sf</code></pre>
+<pre><code>## Linking to GEOS 3.7.1, GDAL 2.2.3, PROJ 4.9.3</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">library</span>(sf)</span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="cf">if</span> (<span class="op">!</span><span class="kw">require</span>(archive)) remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;jimhester/archive&quot;</span>,</span>
+<span id="cb8-3"><a href="#cb8-3"></a>                                               <span class="dt">upgrade =</span> <span class="st">&quot;never&quot;</span>,</span>
+<span id="cb8-4"><a href="#cb8-4"></a>                                               <span class="dt">quiet =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## Loading required package: archive</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">library</span>(archive)</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.3.2     ✔ purrr   0.3.4
+## ✔ tibble  3.0.4     ✔ dplyr   1.0.2
+## ✔ tidyr   1.1.2     ✔ stringr 1.4.0
+## ✔ readr   1.4.0     ✔ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ tidyr::extract() masks raster::extract()
+## ✖ dplyr::filter()  masks stats::filter()
+## ✖ dplyr::lag()     masks stats::lag()
+## ✖ dplyr::select()  masks raster::select()</code></pre>
+</div>
+<div id="data" class="section level2 unnumbered">
+<h2>Data</h2>
+<p>I recommend using the hydro-reinforced elevation data from the <a href="https://nhdplus.com/NHDPlus/">NHDPlusV2</a>. If you have this data locally, like I do, you can skip the next few steps and read in the data like the following (part of my file path obscured, but you should get the jist):</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>elevation &lt;-<span class="st"> </span><span class="kw">raster</span>(<span class="st">&quot;C:/Users/michael.schramm/██████████████████████████/NHDPlus2/NHDPlusTX/NHDPlus12/NHDPlusHydrodem12b/hydrodem&quot;</span>)</span></code></pre></div>
+<p>The function below downloads the NHD raster data by state/region from <a href="https://nhdplus.com/NHDPlus/" class="uri">https://nhdplus.com/NHDPlus/</a> and returns it as a raster object in R.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">## this function will download. extract, and read the nhd raster</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>download_nhd &lt;-<span class="st"> </span><span class="cf">function</span>(url,</span>
+<span id="cb15-3"><a href="#cb15-3"></a>                         rel_path) {</span>
+<span id="cb15-4"><a href="#cb15-4"></a>  <span class="co"># download the files</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>  tmpfile &lt;-<span class="st"> </span><span class="kw">tempfile</span>()</span>
+<span id="cb15-6"><a href="#cb15-6"></a>  ras &lt;-<span class="st"> </span><span class="kw">download.file</span>(<span class="dt">url =</span> url,</span>
+<span id="cb15-7"><a href="#cb15-7"></a>                       <span class="dt">destfile =</span> tmpfile,</span>
+<span id="cb15-8"><a href="#cb15-8"></a>                       <span class="dt">mode =</span> <span class="st">&quot;wb&quot;</span>)</span>
+<span id="cb15-9"><a href="#cb15-9"></a>  </span>
+<span id="cb15-10"><a href="#cb15-10"></a>  <span class="co"># unzip the raster</span></span>
+<span id="cb15-11"><a href="#cb15-11"></a>  tmpdir &lt;-<span class="st"> </span><span class="kw">tempdir</span>()</span>
+<span id="cb15-12"><a href="#cb15-12"></a>  <span class="kw">archive_extract</span>(tmpfile, tmpdir)</span>
+<span id="cb15-13"><a href="#cb15-13"></a>  </span>
+<span id="cb15-14"><a href="#cb15-14"></a>  filepath &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpdir, rel_path)</span>
+<span id="cb15-15"><a href="#cb15-15"></a></span>
+<span id="cb15-16"><a href="#cb15-16"></a>  <span class="co"># reads the raster</span></span>
+<span id="cb15-17"><a href="#cb15-17"></a>  ras &lt;-<span class="st"> </span><span class="kw">raster</span>(filepath)</span>
+<span id="cb15-18"><a href="#cb15-18"></a>  </span>
+<span id="cb15-19"><a href="#cb15-19"></a>  <span class="co"># deletes temp</span></span>
+<span id="cb15-20"><a href="#cb15-20"></a>  <span class="kw">unlink</span>(tmpdir)</span>
+<span id="cb15-21"><a href="#cb15-21"></a>  <span class="kw">unlink</span>(tmpfile)</span>
+<span id="cb15-22"><a href="#cb15-22"></a>  </span>
+<span id="cb15-23"><a href="#cb15-23"></a>  <span class="kw">return</span>(ras)</span>
+<span id="cb15-24"><a href="#cb15-24"></a>}</span>
+<span id="cb15-25"><a href="#cb15-25"></a></span>
+<span id="cb15-26"><a href="#cb15-26"></a><span class="co">## note that the rel_path forward slashes should be escaped backslashes on windows systems</span></span>
+<span id="cb15-27"><a href="#cb15-27"></a>elevation &lt;-<span class="st"> </span><span class="kw">download_nhd</span>(<span class="dt">url =</span> <span class="st">&quot;http://www.horizon-systems.com/NHDPlusData/NHDPlusV21/Data/NHDPlusTX/NHDPlusV21_TX_12_12b_Hydrodem_01.7z&quot;</span>,</span>
+<span id="cb15-28"><a href="#cb15-28"></a>                          <span class="dt">rel_path =</span> <span class="st">&quot;/NHDPlusTX/NHDPlus12/NHDPlusHydrodem12b/hydrodem&quot;</span>)</span></code></pre></div>
+<p><code>elevation</code> is a fairly large raster object, we want to scale it down before doing any processing. Download or read in the watershed boundary dataset to provide some reasonable options for cropping the raster to a manageable size. If you have the NHDPlus dataset locally, something like the following will work:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>elevation &lt;-<span class="st"> </span><span class="kw">shapefile</span>(<span class="st">&quot;C:/Users/michael.schramm/██████████████████████████/NHDPlus2/NHDPlusTX/NHDPlus12/WBDSnapshot/WBD/WBD_Subwatershed&quot;</span>)</span></code></pre></div>
+<p>Otherwise, download and read it into R with the following:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="co">## this function will download. extract, and read the nhd wbd dataset</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>download_wbd &lt;-<span class="st"> </span><span class="cf">function</span>(url,</span>
+<span id="cb17-3"><a href="#cb17-3"></a>                         rel_path) {</span>
+<span id="cb17-4"><a href="#cb17-4"></a>  <span class="co"># download the files</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a>  tmpfile &lt;-<span class="st"> </span><span class="kw">tempfile</span>()</span>
+<span id="cb17-6"><a href="#cb17-6"></a>  ras &lt;-<span class="st"> </span><span class="kw">download.file</span>(<span class="dt">url =</span> url,</span>
+<span id="cb17-7"><a href="#cb17-7"></a>                       <span class="dt">destfile =</span> tmpfile,</span>
+<span id="cb17-8"><a href="#cb17-8"></a>                       <span class="dt">mode =</span> <span class="st">&quot;wb&quot;</span>)</span>
+<span id="cb17-9"><a href="#cb17-9"></a>  </span>
+<span id="cb17-10"><a href="#cb17-10"></a>  <span class="co"># unzip the raster</span></span>
+<span id="cb17-11"><a href="#cb17-11"></a>  tmpdir &lt;-<span class="st"> </span><span class="kw">tempdir</span>()</span>
+<span id="cb17-12"><a href="#cb17-12"></a>  <span class="kw">archive_extract</span>(tmpfile, tmpdir)</span>
+<span id="cb17-13"><a href="#cb17-13"></a>  </span>
+<span id="cb17-14"><a href="#cb17-14"></a>  filepath &lt;-<span class="st"> </span><span class="kw">paste0</span>(tmpdir, rel_path)</span>
+<span id="cb17-15"><a href="#cb17-15"></a></span>
+<span id="cb17-16"><a href="#cb17-16"></a>  <span class="co"># reads the raster</span></span>
+<span id="cb17-17"><a href="#cb17-17"></a>  shp &lt;-<span class="st"> </span><span class="kw">shapefile</span>(filepath)</span>
+<span id="cb17-18"><a href="#cb17-18"></a>  </span>
+<span id="cb17-19"><a href="#cb17-19"></a>  <span class="co"># deletes temp</span></span>
+<span id="cb17-20"><a href="#cb17-20"></a>  <span class="kw">unlink</span>(tmpdir)</span>
+<span id="cb17-21"><a href="#cb17-21"></a>  <span class="kw">unlink</span>(tmpfile)</span>
+<span id="cb17-22"><a href="#cb17-22"></a>  </span>
+<span id="cb17-23"><a href="#cb17-23"></a>  <span class="kw">return</span>(shp)</span>
+<span id="cb17-24"><a href="#cb17-24"></a>}</span>
+<span id="cb17-25"><a href="#cb17-25"></a></span>
+<span id="cb17-26"><a href="#cb17-26"></a>wbd &lt;-<span class="st"> </span><span class="kw">download_wbd</span>(<span class="dt">url =</span> <span class="st">&quot;http://www.horizon-systems.com/NHDPlusData/NHDPlusV21/Data/NHDPlusTX/NHDPlusV21_TX_12_WBDSnapshot_03.7z&quot;</span>,</span>
+<span id="cb17-27"><a href="#cb17-27"></a>                    <span class="dt">rel_path =</span> <span class="st">&quot;/NHDPlusTX/NHDPlus12/WBDSnapshot/WBD/WBD_Subwatershed&quot;</span>)</span></code></pre></div>
+<p>Now we have a large raster and a large shapefile. I want to clip this to a particular area of interest by first by filtering <code>wbd</code> to a HUC_12 of interest, then cropping <code>elevation</code> to the spatial extent of <code>wbd</code>.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="co">## first we need to make sure the same projection is used</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>wbd &lt;-<span class="st"> </span><span class="kw">spTransform</span>(wbd, <span class="kw">crs</span>(elevation))</span>
+<span id="cb18-3"><a href="#cb18-3"></a></span>
+<span id="cb18-4"><a href="#cb18-4"></a><span class="co">## filter to desired HUC_12</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>wbd &lt;-<span class="st"> </span>wbd[wbd<span class="op">$</span>HUC_<span class="dv">12</span><span class="op">==</span><span class="st">&quot;120701010702&quot;</span>,]</span>
+<span id="cb18-6"><a href="#cb18-6"></a></span>
+<span id="cb18-7"><a href="#cb18-7"></a><span class="co">## crop elevation to wbd extent</span></span>
+<span id="cb18-8"><a href="#cb18-8"></a>elevation &lt;-<span class="st"> </span><span class="kw">crop</span>(elevation, <span class="kw">extent</span>(wbd))</span>
+<span id="cb18-9"><a href="#cb18-9"></a></span>
+<span id="cb18-10"><a href="#cb18-10"></a><span class="co">## make sure this looks reasonable</span></span>
+<span id="cb18-11"><a href="#cb18-11"></a><span class="kw">plot</span>(elevation)</span>
+<span id="cb18-12"><a href="#cb18-12"></a><span class="kw">plot</span>(wbd, <span class="dt">add =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Finally, we need to identify the location(s) to delineate the watershed(s) from. We are going to use the downstream node of the TCEQ Assessment Unit polylines:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="co">## can use the download_wbd_function to download and load polyline data</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a>au &lt;-<span class="st"> </span><span class="kw">download_wbd</span>(<span class="dt">url =</span> <span class="st">&quot;https://opendata.arcgis.com/datasets/175c3cb32f2840eca2bf877b93173ff9_4.zip?outSR=%7B%22falseM%22%3A-100000%2C%22xyTolerance%22%3A8.98315284119521e-9%2C%22mUnits%22%3A10000%2C%22zUnits%22%3A1%2C%22latestWkid%22%3A4269%2C%22zTolerance%22%3A2%2C%22wkid%22%3A4269%2C%22xyUnits%22%3A11258999068426.24%2C%22mTolerance%22%3A0.001%2C%22falseX%22%3A-400%2C%22falseY%22%3A-400%2C%22falseZ%22%3A0%7D&quot;</span>,</span>
+<span id="cb19-3"><a href="#cb19-3"></a>                   <span class="dt">rel_path =</span> <span class="st">&quot;/Surface_Water.shp&quot;</span>)</span>
+<span id="cb19-4"><a href="#cb19-4"></a></span>
+<span id="cb19-5"><a href="#cb19-5"></a><span class="co">## subset AU to lines of interest</span></span>
+<span id="cb19-6"><a href="#cb19-6"></a>au &lt;-<span class="st"> </span>au[au<span class="op">$</span>AU_ID <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;1242D_01&quot;</span>, <span class="st">&quot;1242D_02&quot;</span>, <span class="st">&quot;1242B_01&quot;</span>, <span class="st">&quot;1242C_01&quot;</span>),]</span>
+<span id="cb19-7"><a href="#cb19-7"></a></span>
+<span id="cb19-8"><a href="#cb19-8"></a><span class="co">## project the AU</span></span>
+<span id="cb19-9"><a href="#cb19-9"></a>au &lt;-<span class="st"> </span><span class="kw">spTransform</span>(au, <span class="kw">crs</span>(elevation))</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="co">## this function will convert the lines points and get the ending coordinates of the line</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="co">## this assumes the line goes upstream to downstream</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a></span>
+<span id="cb20-4"><a href="#cb20-4"></a>get_endpoints &lt;-<span class="st"> </span><span class="cf">function</span>(x) {</span>
+<span id="cb20-5"><a href="#cb20-5"></a></span>
+<span id="cb20-6"><a href="#cb20-6"></a>  crds &lt;-<span class="st"> </span>x <span class="op">%&gt;%</span></span>
+<span id="cb20-7"><a href="#cb20-7"></a><span class="st">    </span><span class="kw">split</span>(.<span class="op">$</span>AU_ID) <span class="op">%&gt;%</span></span>
+<span id="cb20-8"><a href="#cb20-8"></a><span class="st">    </span><span class="kw">map</span>(<span class="op">~</span>{</span>
+<span id="cb20-9"><a href="#cb20-9"></a>      <span class="co"># this actual shifts the point just slightly upstream</span></span>
+<span id="cb20-10"><a href="#cb20-10"></a>      <span class="co"># since the AU lines are often on the confluence with</span></span>
+<span id="cb20-11"><a href="#cb20-11"></a>      <span class="co"># the larger main segment</span></span>
+<span id="cb20-12"><a href="#cb20-12"></a>      nrow0 &lt;-<span class="st"> </span><span class="kw">dim</span>(<span class="kw">geom</span>(.x))[<span class="dv">1</span>] <span class="op">-</span><span class="st"> </span><span class="dv">10</span></span>
+<span id="cb20-13"><a href="#cb20-13"></a>      <span class="kw">geom</span>(.x)[nrow0,<span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,<span class="st">&quot;y&quot;</span>)]</span>
+<span id="cb20-14"><a href="#cb20-14"></a>      })</span>
+<span id="cb20-15"><a href="#cb20-15"></a>  crds</span>
+<span id="cb20-16"><a href="#cb20-16"></a>}</span>
+<span id="cb20-17"><a href="#cb20-17"></a>  </span>
+<span id="cb20-18"><a href="#cb20-18"></a></span>
+<span id="cb20-19"><a href="#cb20-19"></a><span class="co">## this is a clumsy implementation,</span></span>
+<span id="cb20-20"><a href="#cb20-20"></a><span class="co">## I&#39;m sure there is a better way</span></span>
+<span id="cb20-21"><a href="#cb20-21"></a>endpoints &lt;-<span class="st"> </span><span class="kw">get_endpoints</span>(au)</span>
+<span id="cb20-22"><a href="#cb20-22"></a>endpoints &lt;-<span class="st"> </span>endpoints <span class="op">%&gt;%</span></span>
+<span id="cb20-23"><a href="#cb20-23"></a><span class="st">  </span><span class="kw">map_df</span>(<span class="op">~</span><span class="kw">as_tibble</span>(<span class="kw">t</span>(<span class="kw">as.matrix</span>(.x)))) <span class="op">%&gt;%</span><span class="st"> </span><span class="co">## maps the coords by row</span></span>
+<span id="cb20-24"><a href="#cb20-24"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">id =</span> <span class="kw">names</span>(endpoints)) <span class="co">## this provides id by row</span></span>
+<span id="cb20-25"><a href="#cb20-25"></a></span>
+<span id="cb20-26"><a href="#cb20-26"></a>pourpoints &lt;-<span class="st"> </span><span class="kw">SpatialPointsDataFrame</span>(<span class="dt">coords =</span> endpoints[,<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)],</span>
+<span id="cb20-27"><a href="#cb20-27"></a>                                    <span class="dt">data =</span> endpoints <span class="op">%&gt;%</span><span class="st"> </span>dplyr<span class="op">::</span><span class="kw">select</span>(id),</span>
+<span id="cb20-28"><a href="#cb20-28"></a>                                    <span class="dt">proj4string =</span> <span class="kw">crs</span>(au))</span>
+<span id="cb20-29"><a href="#cb20-29"></a></span>
+<span id="cb20-30"><a href="#cb20-30"></a><span class="kw">plot</span>(au, <span class="dt">col =</span> <span class="st">&quot;dodgerblue&quot;</span>)</span>
+<span id="cb20-31"><a href="#cb20-31"></a><span class="kw">points</span>(pourpoints)</span></code></pre></div>
+<p><img src="document_files/figure-html/linetopoint-1.png" width="672" /></p>
+</div>
+</div>
+<div id="delineate" class="section level1 unnumbered">
+<h1>Delineate</h1>
+<div id="write-data" class="section level2 unnumbered">
+<h2>Write Data</h2>
+<p>The <code>whitebox</code> functions read and write actual shapefile or raster files to your drive and not R objects like most functions. Right now we have the elevation and point data as objects. We need to write these too disc before using <code>whitebox</code>. You may want to save this data anyways into your project folder.</p>
+<p>For this tutorial, I am just writing the data to a temporary directory. Adjust the file locations as needed for your own setup.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">## save elevation to temporary file</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a>file_elevation &lt;-<span class="st"> </span><span class="kw">file.path</span>(<span class="kw">tempdir</span>(), <span class="st">&quot;elevation.tif&quot;</span>)</span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="kw">writeRaster</span>(elevation, <span class="dt">filename =</span> file_elevation, <span class="dt">overwrite =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb21-4"><a href="#cb21-4"></a></span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="co">## save pourpoints to temporary file</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a>file_pourpoints &lt;-<span class="st"> </span><span class="kw">file.path</span>(<span class="kw">tempdir</span>(), <span class="st">&quot;pourpoint.shp&quot;</span>)</span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="kw">shapefile</span>(pourpoints, <span class="dt">filename =</span> file_pourpoints, <span class="dt">overwrite =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+</div>
+<div id="whitebox-functions" class="section level2 unnumbered">
+<h2>whitebox Functions</h2>
+<p>Watershed delineation follows this general process:</p>
+<ol style="list-style-type: decimal">
+<li><p>Fill or breach depressions - Isolated low areas are either filled to match the surrounding elevation, or a breach is added to the depressed area. This is done to prevent the delineation process from trying to drain all the surronding land into the isolated depression. This is evident when your final watershed has lots of holes in it.</p></li>
+<li><p>Generate flow direction raster - For every cell, the flow direction (called pointer in whitebox) will identify one of 8 surrounding cells that overland flow will drain to.</p></li>
+<li><p>Generate flow accumulation raster - Counts the number of cells or area that drains into every cell.</p></li>
+<li><p>Extract streams (optional) - This identifies a stream network from the flow accumulation raster based on some minimum number of cells that drain into a given cell.</p></li>
+<li><p>Snap pour points - The points that are delineated from are not precisely aligned with the elevation cells. Furthermore, they might be closer to an offstream cell then the mainstream cell we are interested in delineating. If the points are not precisely lined up to the grid, the resulting watershed delineation will be incorrect. So, we “snap” the points to the closest stream network based on a minimum distance. <code>whitebox</code> has smart ways of snapping the pour points to ensure the correct stream is used.</p></li>
+<li><p>Delineate one or more basin - Use the pour points to identify all the cells the drain to a given pour point. This will generate a raster.</p></li>
+<li><p>Raster to polygon - We almost always use the watershed polygons to map and summarize data, so convert the raster to a polygon.</p></li>
+</ol>
+<p>Generally speaking, the hydroreinforced DEMs already has step 1 completed on it. Furthermore, you can download preprocessed flow accumulation and flow direction rasters to streamline your workflow. However, I am going to demonstrate all the steps.</p>
+<p><strong>Breach Depressions</strong></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>tmp_directory &lt;-<span class="st"> </span><span class="kw">tempdir</span>()</span>
+<span id="cb22-2"><a href="#cb22-2"></a></span>
+<span id="cb22-3"><a href="#cb22-3"></a>file_breached &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;breached.tif&quot;</span>)</span>
+<span id="cb22-4"><a href="#cb22-4"></a><span class="kw">wbt_breach_depressions_least_cost</span>(<span class="dt">dem =</span> file_elevation,</span>
+<span id="cb22-5"><a href="#cb22-5"></a>                                  <span class="dt">output =</span> file_breached,</span>
+<span id="cb22-6"><a href="#cb22-6"></a>                                  <span class="dt">dist =</span> <span class="dv">0</span>,</span>
+<span id="cb22-7"><a href="#cb22-7"></a>                                  <span class="dt">fill =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;breach_depressions_least_cost - Elapsed Time (excluding I/O): 0.33s&quot;</code></pre>
+<p><strong>Flow Direction</strong></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>file_pointer &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;pointer.tif&quot;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="kw">wbt_rho8_pointer</span>(<span class="dt">dem =</span> file_breached,</span>
+<span id="cb24-3"><a href="#cb24-3"></a>               <span class="dt">output =</span> file_pointer)</span></code></pre></div>
+<pre><code>## [1] &quot;rho8_pointer - Elapsed Time (excluding I/O): 0.22s&quot;</code></pre>
+<p><strong>Flow Accumulation</strong></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>file_accumulation &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;fac.tif&quot;</span>)</span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="kw">wbt_d8_flow_accumulation</span>(<span class="dt">input =</span> file_pointer,</span>
+<span id="cb26-3"><a href="#cb26-3"></a>                         <span class="dt">output =</span> file_accumulation,</span>
+<span id="cb26-4"><a href="#cb26-4"></a>                         <span class="dt">pntr =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;d8_flow_accumulation - Elapsed Time (excluding I/O): 0.23s&quot;</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">plot</span>(<span class="kw">raster</span>(file_accumulation))</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><strong>Extract Streams</strong></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>file_streams &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;streams.tif&quot;</span>)</span>
+<span id="cb29-2"><a href="#cb29-2"></a><span class="kw">wbt_extract_streams</span>(<span class="dt">flow_accum =</span> file_accumulation,</span>
+<span id="cb29-3"><a href="#cb29-3"></a>                    <span class="dt">output =</span> file_streams,</span>
+<span id="cb29-4"><a href="#cb29-4"></a>                    <span class="dt">threshold =</span> <span class="dv">2000</span>,</span>
+<span id="cb29-5"><a href="#cb29-5"></a>                    <span class="dt">zero_background =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;extract_streams - Elapsed Time (excluding I/O): 0.3s&quot;</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">plot</span>(<span class="kw">raster</span>(file_streams))</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><strong>Snap Pour Points</strong></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>file_snapped &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="st">&quot;snapped.shp&quot;</span>)</span>
+<span id="cb32-2"><a href="#cb32-2"></a><span class="kw">wbt_jenson_snap_pour_points</span>(<span class="dt">pour_pts =</span> file_pourpoints,</span>
+<span id="cb32-3"><a href="#cb32-3"></a>                     <span class="dt">streams =</span> file_streams,</span>
+<span id="cb32-4"><a href="#cb32-4"></a>                     <span class="dt">output =</span> file_snapped,</span>
+<span id="cb32-5"><a href="#cb32-5"></a>                     <span class="dt">snap_dist =</span> <span class="dv">60</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;jenson_snap_pour_points - Elapsed Time (excluding I/O): 0.0s&quot;</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="kw">plot</span>(<span class="kw">shapefile</span>(file_snapped), <span class="dt">pch =</span> <span class="dv">0</span>)</span>
+<span id="cb34-2"><a href="#cb34-2"></a><span class="co">#plot(shapefile(file_pourpoints), add = TRUE)</span></span>
+<span id="cb34-3"><a href="#cb34-3"></a><span class="kw">plot</span>(<span class="kw">raster</span>(file_streams), <span class="dt">add =</span> <span class="ot">TRUE</span>, <span class="dt">alpha =</span> <span class="fl">.5</span>)</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="kw">ggplot</span>() <span class="op">+</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data =</span> <span class="kw">read_sf</span>(file_snapped))</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<p><strong>Pour Watersheds</strong>
+We should be able to use <code>wbt_unnest_watersheds()</code> to delineate all of the watersheds at once. However, I am not getting good results with it.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="co">## This should work, but doesn&#39;t work well for me</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a><span class="co"># file_watersheds &lt;- file.path(tmp_directory, &quot;watersheds.tif&quot;)</span></span>
+<span id="cb36-3"><a href="#cb36-3"></a><span class="co"># wbt_unnest_basins(d8_pntr = file_pointer,</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="co">#                   pour_pts = file_snapped,</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="co">#                   output = file_watersheds)</span></span>
+<span id="cb36-6"><a href="#cb36-6"></a></span>
+<span id="cb36-7"><a href="#cb36-7"></a></span>
+<span id="cb36-8"><a href="#cb36-8"></a></span>
+<span id="cb36-9"><a href="#cb36-9"></a><span class="co">## Make a shapefile for each pourpoint</span></span>
+<span id="cb36-10"><a href="#cb36-10"></a><span class="co">## delineate and output raster for ewach pourpoint</span></span>
+<span id="cb36-11"><a href="#cb36-11"></a><span class="co">## make a shapefile for each watershed raster</span></span>
+<span id="cb36-12"><a href="#cb36-12"></a></span>
+<span id="cb36-13"><a href="#cb36-13"></a>write_temp_sf &lt;-<span class="st"> </span><span class="cf">function</span>(x) {</span>
+<span id="cb36-14"><a href="#cb36-14"></a>  dsn &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="kw">paste0</span>(<span class="st">&quot;snapped&quot;</span>, x,<span class="st">&quot;.shp&quot;</span>))</span>
+<span id="cb36-15"><a href="#cb36-15"></a>  df &lt;-<span class="st"> </span><span class="kw">read_sf</span>(file_snapped) <span class="op">%&gt;%</span><span class="st"> </span>dplyr<span class="op">::</span><span class="kw">filter</span>(id <span class="op">==</span><span class="st"> </span>x)</span>
+<span id="cb36-16"><a href="#cb36-16"></a>  <span class="kw">write_sf</span>(df, <span class="dt">dsn =</span> dsn)</span>
+<span id="cb36-17"><a href="#cb36-17"></a>  <span class="kw">return</span>(dsn)</span>
+<span id="cb36-18"><a href="#cb36-18"></a>}</span>
+<span id="cb36-19"><a href="#cb36-19"></a></span>
+<span id="cb36-20"><a href="#cb36-20"></a></span>
+<span id="cb36-21"><a href="#cb36-21"></a>pp_files &lt;-<span class="st"> </span><span class="kw">read_sf</span>(file_snapped)<span class="op">$</span>id <span class="op">%&gt;%</span></span>
+<span id="cb36-22"><a href="#cb36-22"></a><span class="st">  </span><span class="kw">map</span>(<span class="op">~</span><span class="kw">write_temp_sf</span>(.x))</span>
+<span id="cb36-23"><a href="#cb36-23"></a></span>
+<span id="cb36-24"><a href="#cb36-24"></a></span>
+<span id="cb36-25"><a href="#cb36-25"></a></span>
+<span id="cb36-26"><a href="#cb36-26"></a><span class="co">## delineate each pour point</span></span>
+<span id="cb36-27"><a href="#cb36-27"></a></span>
+<span id="cb36-28"><a href="#cb36-28"></a>write_watershed_rasters &lt;-<span class="st"> </span><span class="cf">function</span>(x) {</span>
+<span id="cb36-29"><a href="#cb36-29"></a>  </span>
+<span id="cb36-30"><a href="#cb36-30"></a>  output &lt;-<span class="st"> </span><span class="kw">read_sf</span>(x)<span class="op">$</span>id</span>
+<span id="cb36-31"><a href="#cb36-31"></a>  output &lt;-<span class="st"> </span><span class="kw">file.path</span>(tmp_directory, <span class="kw">paste0</span>(<span class="st">&quot;ras_&quot;</span>, output, <span class="st">&quot;.tif&quot;</span>))</span>
+<span id="cb36-32"><a href="#cb36-32"></a>  </span>
+<span id="cb36-33"><a href="#cb36-33"></a>  <span class="kw">wbt_watershed</span>(<span class="dt">d8_pntr =</span> file_pointer,</span>
+<span id="cb36-34"><a href="#cb36-34"></a>                <span class="dt">pour_pts =</span> x,</span>
+<span id="cb36-35"><a href="#cb36-35"></a>                <span class="dt">output =</span> output)</span>
+<span id="cb36-36"><a href="#cb36-36"></a>  <span class="kw">return</span>(output)</span>
+<span id="cb36-37"><a href="#cb36-37"></a>}</span>
+<span id="cb36-38"><a href="#cb36-38"></a></span>
+<span id="cb36-39"><a href="#cb36-39"></a></span>
+<span id="cb36-40"><a href="#cb36-40"></a></span>
+<span id="cb36-41"><a href="#cb36-41"></a>watershed_ras_files &lt;-<span class="st"> </span>pp_files <span class="op">%&gt;%</span></span>
+<span id="cb36-42"><a href="#cb36-42"></a><span class="st">  </span><span class="kw">map</span>(<span class="op">~</span><span class="kw">write_watershed_rasters</span>(.x))</span></code></pre></div>
+<p>Now we can process each raster into a polygon:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="co">## this function will read a raster and convert to a simple features dataframe</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a>watershed2poly &lt;-<span class="st"> </span><span class="cf">function</span>(x) {</span>
+<span id="cb37-3"><a href="#cb37-3"></a>  ras &lt;-<span class="st"> </span>stars<span class="op">::</span><span class="kw">read_stars</span>(x)</span>
+<span id="cb37-4"><a href="#cb37-4"></a>  poly &lt;-<span class="st"> </span>sf<span class="op">::</span><span class="kw">st_as_sf</span>(ras,</span>
+<span id="cb37-5"><a href="#cb37-5"></a>                       <span class="dt">merge =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb37-6"><a href="#cb37-6"></a>                       <span class="dt">use_integer =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span></span>
+<span id="cb37-7"><a href="#cb37-7"></a><span class="st">    </span><span class="kw">rename</span>(<span class="dt">ID =</span> <span class="dv">1</span>) <span class="op">%&gt;%</span></span>
+<span id="cb37-8"><a href="#cb37-8"></a><span class="st">    </span><span class="kw">mutate</span>(<span class="dt">ID =</span> stringr<span class="op">::</span><span class="kw">str_extract</span>(x, <span class="st">&quot;(?&lt;=ras_).*(?=.tif)&quot;</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb37-9"><a href="#cb37-9"></a><span class="st">    </span><span class="kw">group_by</span>(ID) <span class="op">%&gt;%</span></span>
+<span id="cb37-10"><a href="#cb37-10"></a><span class="st">    </span><span class="kw">summarise</span>()</span>
+<span id="cb37-11"><a href="#cb37-11"></a>  <span class="kw">return</span>(poly)</span>
+<span id="cb37-12"><a href="#cb37-12"></a>}</span>
+<span id="cb37-13"><a href="#cb37-13"></a></span>
+<span id="cb37-14"><a href="#cb37-14"></a>output &lt;-<span class="st"> </span><span class="kw">map_dfr</span>(watershed_ras_files, <span class="op">~</span><span class="kw">watershed2poly</span>(.x))</span></code></pre></div>
+<pre><code>## `summarise()` ungrouping output (override with `.groups` argument)
+## `summarise()` ungrouping output (override with `.groups` argument)
+## `summarise()` ungrouping output (override with `.groups` argument)
+## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="co">#output &lt;- mutate(output, AU_ID = au$AU_ID)</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a></span>
+<span id="cb39-3"><a href="#cb39-3"></a><span class="kw">ggplot</span>(output) <span class="op">+</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> ID), <span class="dt">alpha =</span> <span class="fl">0.25</span>) <span class="op">+</span></span>
+<span id="cb39-5"><a href="#cb39-5"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data =</span> <span class="kw">st_as_sf</span>(pourpoints))</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>One issue is that the largest watershed overlaps the smaller subwatersheds. We need a way to reorder the watersheds (probably by size) so the figures are clear.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="co">## change the id variable to factor and</span></span>
+<span id="cb40-2"><a href="#cb40-2"></a><span class="co">## reorder the factor by the area of the watershed</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a>output &lt;-<span class="st"> </span>output <span class="op">%&gt;%</span></span>
+<span id="cb40-4"><a href="#cb40-4"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">area =</span> <span class="kw">st_area</span>(output)) <span class="op">%&gt;%</span></span>
+<span id="cb40-5"><a href="#cb40-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">ID =</span> forcats<span class="op">::</span><span class="kw">fct_reorder</span>(ID, <span class="op">-</span>area)) </span>
+<span id="cb40-6"><a href="#cb40-6"></a>  </span>
+<span id="cb40-7"><a href="#cb40-7"></a></span>
+<span id="cb40-8"><a href="#cb40-8"></a><span class="kw">ggplot</span>(output) <span class="op">+</span></span>
+<span id="cb40-9"><a href="#cb40-9"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> ID))</span></code></pre></div>
+<p><img src="document_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>The final step is to save or export the watersheds as a shapefile:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="co">## The line is commented since I didn&#39;t run it for the tutorial</span></span>
+<span id="cb41-2"><a href="#cb41-2"></a><span class="co">#st_write(output, &quot;filepath/watersheds.shp&quot;)</span></span>
+<span id="cb41-3"><a href="#cb41-3"></a></span>
+<span id="cb41-4"><a href="#cb41-4"></a><span class="co">## The following will cleanup any temp files</span></span>
+<span id="cb41-5"><a href="#cb41-5"></a><span class="kw">unlink</span>(tmp_directory, <span class="dt">recursive =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+
+<div id="refs" class="references">
+<div id="ref-lindsay2016whitebox">
+<p>Lindsay, John B. 2016. “Whitebox Gat: A Case Study in Geomorphometric Analysis.” <em>Computers &amp; Geosciences</em> 95: 75–84.</p>
+</div>
+<div id="ref-rcore">
+<p>R Core Team. 2020. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-whitebox">
+<p>Wu, Qiusheng. 2020. <em>Whitebox: ’WhiteboxTools’ R Frontend</em>. <a href="https://github.com/giswqs/whiteboxR">https://github.com/giswqs/whiteboxR</a>.</p>
+</div>
+</div>
+</div>
+
+<center>
+  <div class="footer">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Text and figures are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> unless otherwise indicated.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/mps9506/twri-bookdown-template/edit/main/%s",
+"text": "Suggest an edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["https://github.com/mps9506/twri-bookdown-template/raw/main/%s"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
